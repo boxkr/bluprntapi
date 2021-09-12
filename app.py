@@ -34,24 +34,26 @@ def data():
 
     if request.method == "POST":
 
-        classifications ["Heart","Oblong","Oval","Round","Square"]
+        #classifications ["Heart","Oblong","Oval","Round","Square"]
         requestData = request.get_json()
+
         b64id = requestData['base64ID']
         
-        pred = getPrediction(b64id)
-        
-        maxi = -1
-        index = 0
-        for i in range(len(pred[0])):
 
-            if pred[0][i] > maxi:
-                maxi=pred[0][i]
-                index = i
+        #pred = getPrediction(b64id)
+        
+        #maxi = -1
+        # = 0
+        #for i in range(len(pred[0])):
+
+        #    if pred[0][i] > maxi:
+        #         maxi=pred[0][i]
+        #         index = i
         
 
-        #jsonify importante
-        #return jsonify(b64id)
-        return jsonify(index)
+        # #jsonify importante
+        return jsonify(b64id)
+        # return jsonify(index)
         
 
     else:
