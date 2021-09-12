@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request, render_template
+
 from flask_cors import CORS
 
 
@@ -17,9 +18,9 @@ def data():
 
     if request.method == "POST":
 
-        return "{
-            start:end
-        }"
+        d = {"start":"end"}
+
+        return d.jsonify()
         
 
     else:
