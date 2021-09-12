@@ -18,10 +18,11 @@ def data():
 
     if request.method == "POST":
 
-        d = {"start":"end"}
+        
 
-        return d.jsonify()
+        return jsonify("thisworks")
         
 
     else:
+
         return "this is a get request"
