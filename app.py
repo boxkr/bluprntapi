@@ -52,7 +52,7 @@ def data():
         
 
         # #jsonify importante
-        return jsonify(1)
+        return jsonify("1")
         # return jsonify(index)
         
 
