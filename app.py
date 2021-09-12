@@ -18,12 +18,14 @@ def data():
 
     if request.method == "POST":
 
+        requestData = request.get_json()
+        name = requestData['name']
         
         #jsons a string
         #return jsonify("Lol")
-        return jsonify(request)
+        return name
         
 
     else:
 
-        return jsonify(request)
+        return "get"
