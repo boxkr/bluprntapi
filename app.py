@@ -16,8 +16,11 @@ def data():
     #incoming data
 
     if request.method == "POST":
-        requestJSON = request.json
-        return "this works"
+
+        return "{
+            start:end
+        }"
+        
 
     else:
         return "this is a get request"
