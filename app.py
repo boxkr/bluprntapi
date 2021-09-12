@@ -18,6 +18,6 @@ def data():
     if request.method == "POST":
         print("getting post request")
         requestJSON = request.json
-        return requestJSON.jsonify()
+        return "ayylmao"
 
     return "hi"
