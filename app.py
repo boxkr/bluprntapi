@@ -19,4 +19,5 @@ def data():
         requestJSON = request.json
         return "this works"
 
-    return "hi"
+    else:
+        return "this is a get request"
