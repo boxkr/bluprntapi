@@ -25,4 +25,4 @@ def data():
 
     else:
 
-        return request
+        return jsonify(request)
