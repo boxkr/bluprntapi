@@ -19,11 +19,11 @@ def data():
     if request.method == "POST":
 
         requestData = request.get_json()
-        name = requestData['name']
+        b64id = requestData['base64ID']
         
         #jsons a string
         #return jsonify("Lol")
-        return name
+        return b64id
         
 
     else:
