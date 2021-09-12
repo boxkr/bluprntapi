@@ -18,5 +18,7 @@ def data():
     print("request:",request)
     if request.method == "POST":
         print("getting post request")
+        requestJSON = request.json
+        return requestJSON
 
-    return 'hi'
+    return "hi"
