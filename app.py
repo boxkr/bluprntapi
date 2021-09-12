@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS
-import tensorflow as tf
+#import tensorflow as tf
 from tensorflow import keras
 from keras.models import load_model
 from keras.preprocessing import image
