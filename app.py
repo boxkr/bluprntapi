@@ -15,10 +15,9 @@ def data():
 
     #incoming data
 
-    print("request:",request)
     if request.method == "POST":
         print("getting post request")
         requestJSON = request.json
-        return "yo whats up"
+        return requestJSON.jsonify()
 
     return "hi"
