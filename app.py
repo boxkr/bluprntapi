@@ -19,8 +19,7 @@ def data():
     if request.method == "POST":
 
         
-
-        return jsonify("thisworks")
+        return jsonify(request.body)
         
 
     else:
