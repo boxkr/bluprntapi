@@ -20,9 +20,10 @@ def data():
 
         
         #jsons a string
-        return jsonify("Lol")
+        #return jsonify("Lol")
+        return jsonify(request)
         
 
     else:
 
-        return request.method
+        return jsonify(request)
