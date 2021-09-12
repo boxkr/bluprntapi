@@ -23,7 +23,7 @@ def data():
         
         #jsons a string
         #return jsonify("Lol")
-        return b64id
+        return jsonify(b64id)
         
 
     else:
