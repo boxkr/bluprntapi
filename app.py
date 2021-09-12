@@ -16,8 +16,7 @@ def data():
     #incoming data
 
     if request.method == "POST":
-        print("getting post request")
         requestJSON = request.json
-        return "ayylmao"
+        return "this works"
 
     return "hi"
